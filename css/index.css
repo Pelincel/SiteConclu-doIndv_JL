@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    flex-shrink: 0;
+    /* Impede que o footer seja reduzido */
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    background-color: #1397D5;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cardsContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagemCard {
+    width: 40%;
+    height: auto;
+}
+
+.cards {
+    border-radius: 10px;
+    width: 15%;
+    height: 30%;
+    background-color: #023b55;
+    margin-top: 20px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.data {
+    margin-right: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.procurar_card {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+    .procurar_card .form-control {
+        padding-right: 300px;
+    }
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1397D5;
+    cursor: pointer;
+}
